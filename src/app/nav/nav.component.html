@@ -3,9 +3,13 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <div class="avatar">
+        <img src="https://i.ibb.co/fQTMbpn/download.jpg" alt="Avatar" class="avatar-image">
+      </div>
+    </mat-toolbar>
     <mat-nav-list>
-      <a *ngFor="let item of menuItems" mat-list-item> {{item | titlecase}} </a>
+      <a *ngFor="let item of menuItems" mat-list-item>{{item}}</a>
     </mat-nav-list>
     <router-outlet></router-outlet>
   </mat-sidenav>

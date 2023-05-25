@@ -1,5 +1,5 @@
 .sidenav-container {
-  height: 60;
+  height: auto;
 }
 
 .sidenav {
@@ -7,5 +7,19 @@
 }
 
 .sidenav .mat-toolbar {
-  background: rgb(197, 32, 32);
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 25px;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
